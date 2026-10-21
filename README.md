@@ -1,5 +1,7 @@
 # Marketing Skills for AI Agents
 
+This is the LocalHighStreets copy of the marketing skill library originally authored by Corey Haines. Upstream community, partner and release references below describe the upstream project. To install this organisation's version, select `localhighstreets/marketingskills` rather than the upstream repository. The checked-in [skills](skills), [tools](tools) and plugin manifests define this checkout's contents. No running LocalHighStreet campaign or integration is implied by their presence.
+
 A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io).
 
 Built by [Corey Haines](https://corey.co?ref=marketingskills). Need hands-on help? Check out [Conversion Factory](https://conversionfactory.co?ref=marketingskills) — Corey's agency for conversion optimization, landing pages, and growth strategy. Want to learn more about marketing? Subscribe to [Swipe Files](https://swipefiles.com?ref=marketingskills). Want to get dangerously good at using AI for marketing? Check out [AI Marketing Training](https://conversionfactory.co/offers/ai-marketing-training?ref=marketingskills). Want an autonomous AI agent that uses these skills to be your CMO? Try [Magister](https://magistermarketing.com?ref=marketingskills).
@@ -128,13 +130,13 @@ Use [npx skills](https://github.com/vercel-labs/skills) to install skills direct
 
 ```bash
 # Install all skills
-npx skills add coreyhaines31/marketingskills
+npx skills add localhighstreets/marketingskills
 
 # Install specific skills
-npx skills add coreyhaines31/marketingskills --skill cro copywriting
+npx skills add localhighstreets/marketingskills --skill cro copywriting
 
 # List available skills
-npx skills add coreyhaines31/marketingskills --list
+npx skills add localhighstreets/marketingskills --list
 ```
 
 The CLI detects which agents you have installed and asks where to install. For Claude Code it installs into `.claude/skills/`; universal agents share `.agents/skills/`.
@@ -143,7 +145,7 @@ The CLI detects which agents you have installed and asks where to install. For C
 > If you run the command from **inside** an agent session (e.g., asking Claude Code to install the skills for you), the CLI runs non-interactively and may only install to the universal `.agents/skills/` directory, which Claude Code does not read. Pass the agent explicitly:
 >
 > ```bash
-> npx skills add coreyhaines31/marketingskills -a claude-code
+> npx skills add localhighstreets/marketingskills -a claude-code
 > ```
 
 ### Option 2: Claude Code Plugin
@@ -152,7 +154,7 @@ Install via Claude Code's built-in plugin system:
 
 ```bash
 # Add the marketplace
-/plugin marketplace add coreyhaines31/marketingskills
+/plugin marketplace add localhighstreets/marketingskills
 
 # Install all marketing skills
 /plugin install marketing-skills
@@ -161,7 +163,7 @@ Install via Claude Code's built-in plugin system:
 > **Note:** `/plugin` is only available in an interactive Claude Code CLI session. It is **not** available in Claude Code on the web, GitHub Actions, or other non-interactive/remote environments — in those cases you'll see `/plugin isn't available in this environment`. Use **Option 1 (`npx skills`)** instead, or the equivalent CLI commands:
 >
 > ```bash
-> claude plugin marketplace add coreyhaines31/marketingskills
+> claude plugin marketplace add localhighstreets/marketingskills
 > claude plugin install marketing-skills@marketingskills
 > ```
 
@@ -171,7 +173,7 @@ Install via Codex's plugin system:
 
 ```bash
 # Add the marketplace
-codex plugin marketplace add coreyhaines31/marketingskills
+codex plugin marketplace add localhighstreets/marketingskills
 
 # Then browse and install from inside a Codex session
 /plugins
@@ -184,7 +186,7 @@ Select **marketing-skills** to install all skills. To pick up new releases later
 Clone the entire repo and copy the skills folder:
 
 ```bash
-git clone https://github.com/coreyhaines31/marketingskills.git
+git clone https://github.com/localhighstreets/marketingskills.git
 cp -r marketingskills/skills/* .agents/skills/
 ```
 
@@ -193,7 +195,7 @@ cp -r marketingskills/skills/* .agents/skills/
 Add as a submodule for easy updates:
 
 ```bash
-git submodule add https://github.com/coreyhaines31/marketingskills.git .agents/marketingskills
+git submodule add https://github.com/localhighstreets/marketingskills.git .agents/marketingskills
 ```
 
 Then reference skills from `.agents/marketingskills/skills/`.
@@ -210,13 +212,13 @@ Use [SkillKit](https://github.com/rohitg00/skillkit) to install skills across mu
 
 ```bash
 # Install all skills
-npx skillkit install coreyhaines31/marketingskills
+npx skillkit install localhighstreets/marketingskills
 
 # Install specific skills
-npx skillkit install coreyhaines31/marketingskills --skill cro copywriting
+npx skillkit install localhighstreets/marketingskills --skill cro copywriting
 
 # List available skills
-npx skillkit install coreyhaines31/marketingskills --list
+npx skillkit install localhighstreets/marketingskills --list
 ```
 
 ## Upgrading from v1.x to v2.0
@@ -233,7 +235,7 @@ rm -rf page-cro form-cro \
        signup-flow-cro social-content
 ```
 
-Then reinstall the v2.0 skills via your usual method (e.g., `npx skills add coreyhaines31/marketingskills`).
+Then reinstall the v2.0 skills via your usual method (e.g., `npx skills add localhighstreets/marketingskills`).
 
 ### Migrate the product marketing context file
 
