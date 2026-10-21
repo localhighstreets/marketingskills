@@ -12,6 +12,33 @@ New to the terminal and coding agents? Check out the companion guide [Coding for
 
 Run into a problem or have a question? [Open an issue](https://github.com/coreyhaines31/marketingskills/issues) — we're happy to help.
 
+## Completion and remaining work
+
+Snapshot: **21 October 2026**.
+
+| Measure | Status |
+|---|---|
+| Overall feature/release completion | **Not yet measurable** — no reconciled, acceptance-tested repository-wide baseline was established in this review |
+| Tracked-work completion | **N/A** — no eligible GitHub issues in this repository |
+| Open tracked work | 0 issues |
+| Excluded closures | 0 cancelled/not-planned or unclassified closures |
+
+The tracked percentage is `completed / (completed + open) × 100`, rounded to one decimal place. It counts repository GitHub issues equally; PRs and closures not marked `completed` are excluded. It is **not** a feature-completeness, effort, test-coverage or production-readiness percentage. Jira work, untracked requirements and upstream-project issues are outside this denominator. An empty tracker means unknown scope, not 100% completion.
+
+### Remaining work and acceptance evidence
+
+The following items identify implementation decisions, tracker reconciliation or validation still needed to establish completion; they are not all newly verified code defects.
+
+- Define the LHS-specific skill/tool adoption scope and its acceptance criteria.
+- Verify plugin installation and representative skill/tool execution in the intended agent host.
+- Validate configured marketing integrations and campaign outcomes separately from the existence of skill instructions.
+
+### Tracked backlog
+
+No open GitHub issues were returned for this repository at the snapshot date. Establish an owner-approved scope and acceptance checklist before assigning an overall percentage.
+
+[Review the current issue tracker](https://github.com/localhighstreets/marketingskills/issues?q=is%3Aissue). Reconcile old package scopes, route assumptions and duplicate/superseded tickets against current code before acting on them. Update this dated numerator/denominator and remaining-work list after acceptance changes.
+
 ## Partners
 
 The library is free and MIT-licensed. [Verified Partners](tools/REGISTRY.md#verified-partners) fund the work — vetted, disclosed tool integrations, listed alongside the neutral options and never influencing what the core skills recommend. The full rules and boundaries are in [tools/PARTNERS.md](tools/PARTNERS.md). [Become a partner →](https://marketing-skills.com/sponsorship)
